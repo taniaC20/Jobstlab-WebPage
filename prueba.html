@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--  Required meta tags always come first  -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design Bootstrap Template</title>
+    <!--  Font Awesome  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="../css/mdb.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <style>
+
+        /* html,
+        body,
+        header,
+        .jarallax {
+          height: 700px;
+        }
+
+        @media (max-width: 740px) {
+          html,
+          body,
+          header,
+          .jarallax {
+            height: 100vh;
+          }
+        }
+
+        @media (min-width: 800px) and (max-width: 850px) {
+          html,
+          body,
+          header,
+          .jarallax {
+            height: 100vh;
+          }
+        }
+
+        @media (min-width: 560px) and (max-width: 650px) {
+          header .jarallax h1 {
+            margin-bottom: 1.5rem !important;
+          }
+          header .jarallax h5 {
+            margin-bottom: 1.5rem !important;
+          }
+        } */
+
+        .top-nav-collapse {
+            background-color: #3f51b5!important;
+        }
+        .navbar:not(.top-nav-collapse) {
+            background: transparent!important;
+        }
+        @media (max-width: 768px) {
+            .navbar:not(.top-nav-collapse) {
+                background: #3f51b5!important;
+            }
+        }
+        @media (min-width: 800px) and (max-width: 850px) {
+            .navbar:not(.top-nav-collapse) {
+                background: #3f51b5!important;
+            }
+        }
+        h5 {
+            letter-spacing: 3px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Navigation -->
+    <header>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg scrolling-navbar">
+            <div class="container smooth-scroll">
+                <a class="navbar-brand" href="index.html"><strong>MDB</strong></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" onclick="goto('index.html#home')">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="goto('index.html#team')" data-offset="60">People</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="goto('index.html#products')" data-offset="60">Research</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="goto('index.html#gallery')" data-offset="60">Publications</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="goto('index.html#contact')" data-offset="60">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline">
+                        <div class="md-form my-0">
+                            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <!-- Main Navigation -->
+
+    <!-- Main Layout -->
+    <main>
+
+        <div class="container">
+
+          <section class="my-5">
+
+            <div class="card">
+              <div class="card-body">
+        
+                <h5 class="text-center font-weight-bold mb-4">Number of browser users</h5>
+        
+                <hr>
+        
+                <!--Grid row-->
+                <div class="row">
+        
+                  <!--Grid column-->
+                  <div class="col-md-7 mb-4">
+        
+                    <canvas id="pieChart" class="mt-4"></canvas>
+                    <!-- <img src='img/custom/unnamed.gif'/> -->
+        
+                  </div>
+                  <!--Grid column-->
+        
+                  <!--Grid column-->
+                  <div class="col-md-5 mb-4">
+        
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">Browser</th>
+                          <th scope="col">Users</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Chrome</td>
+                          <td id="cell-chrome"></td>
+                        </tr>
+                        <tr>
+                          <td>FireFox</td>
+                          <td id="cell-firefox"></td>
+                        </tr>
+                        <tr>
+                          <td>Opera</td>
+                          <td id="cell-opera"></td>
+                        </tr>
+                        <tr>
+                          <td>Safari</td>
+                          <td id="cell-safari"></td>
+                        </tr>
+                        <tr>
+                          <td>Edge</td>
+                          <td id="cell-edge"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+        
+                  </div>
+                  <!--Grid column-->
+        
+                </div>
+                <!--Grid row-->
+        
+              </div>
+            </div>
+        
+        
+          </section>
+
+        
+
+     
+
+        </div>
+
+    </main>
+    <!-- Main Layout -->
+
+    <!-- Footer -->
+    <footer class="page-footer pt-4 mt-4 indigo text-center text-md-left">
+
+        <!-- Footer Links -->
+        <div class="container">
+            <div class="row">
+
+                <!-- First column -->
+                <div class="col-md-6">
+                    <h6 class="text-uppercase font-weight-bold">Footer Content</h6>
+                    <p>Here you can use rows and columns here to organize your footer content.</p>
+                </div>
+                <!-- First column -->
+
+                <!-- Second column -->
+                <div class="col-md-3">
+                    <h6 class="text-uppercase font-weight-bold">Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#!">Link 1</a></li>
+                        <li><a href="#!">Link 2</a></li>
+                        <li><a href="#!">Link 3</a></li>
+                    </ul>
+                </div>
+                <!-- Second column -->
+
+                <!-- Third column -->
+                <div class="col-md-3">
+                    <h6 class="text-uppercase font-weight-bold">Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#!">Link 1</a></li>
+                        <li><a href="#!">Link 2</a></li>
+                        <li><a href="#!">Link 3</a></li>
+                    </ul>
+                </div>
+                <!-- Third column -->
+            </div>
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright py-3 text-center">
+            <div class="container-fluid">
+                &copy; 2019 Copyright: <a href="https://mdbootstrap.com/docs/jquery/"> MDBootstrap.com </a>
+
+            </div>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+    <!--  SCRIPTS  -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../js/mdb.min.js"></script>
+    <script>
+        $(document).ready(() => {
+          new WOW().init();
+        });
+
+        // MDB Lightbox Init
+        $(function () {
+            $("#mdb-lightbox-ui").load("../mdb-addons/mdb-lightbox-ui.html");
+        });
+
+    </script>
+    <script type="text/javascript" src="js/custom/pie_chart.js"></script>
+    <script type="text/javascript" src="js/custom/utils.js"></script>
+</body>
+</html>
